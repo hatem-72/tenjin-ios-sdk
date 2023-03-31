@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'TenjinSDK.xcframework'
   s.vendored_frameworks = "TenjinSDK.xcframework"
 
-  s.frameworks = "AdSupport", "AppTrackingTransparency", "iAd", "StoreKit"
-  s.weak_frameworks = "AdServices"
+  s.frameworks = "AdSupport", "iAd", "StoreKit"
+  s.weak_frameworks = "AdServices", "AppTrackingTransparency"
   s.xcconfig = { "OTHER_LINKER_FLAGS" => "-ObjC -all_load", 'OTHER_LDFLAGS' => '-framework TenjinSDK' }
 end
